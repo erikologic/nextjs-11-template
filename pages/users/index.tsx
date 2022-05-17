@@ -1,3 +1,5 @@
+import { ReactElement } from 'react'
+
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
@@ -10,7 +12,7 @@ type Props = {
   items: User[]
 }
 
-const WithStaticProps = ({ items }: Props) => (
+const WithStaticProps = ({ items }: Props): ReactElement => (
   <Layout title="Users List | Next.js + TypeScript Example">
     <h1>Users List</h1>
     <p>

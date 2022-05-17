@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import { GetStaticProps, GetStaticPaths } from 'next'
 
 import { User } from '../../interfaces'
@@ -10,7 +11,7 @@ type Props = {
   errors?: string
 }
 
-const StaticPropsDetail = ({ item, errors }: Props) => {
+const StaticPropsDetail = ({ item, errors }: Props): ReactElement => {
   if (errors) {
     return (
       <Layout title="Error | Next.js + TypeScript Example">
