@@ -1,5 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import styled from 'styled-components'
+
+const Title = styled.h1`
+  color: red;
+  font-size: 50px;
+`
 
 export const Home = (): JSX.Element => (
   <div className="container">
@@ -9,9 +15,9 @@ export const Home = (): JSX.Element => (
     </Head>
 
     <main>
-      <h1 className="title">
+      <Title>
         Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      </Title>
 
       <p className="description">
         Get started by editing <code>pages/index.tsx</code>

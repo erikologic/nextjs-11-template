@@ -1,9 +1,5 @@
 {
   "private": true,
-  "engines": {
-    "npm": "^6",
-    "node": "^14"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -29,7 +25,9 @@
   "dependencies": {
     "next": "^11",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^11",
@@ -39,9 +37,11 @@
     "@types/node": "^14.14.25",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.1",
+    "@types/styled-components": "5.1.9",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
     "babel-jest": "^27.0.2",
+    "babel-plugin-styled-components": "^1.12.0",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-react": "^7.19.0",
